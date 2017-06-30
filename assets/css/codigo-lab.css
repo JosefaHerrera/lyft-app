@@ -1,0 +1,57 @@
+*{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.icono-back{
+	font-size: 30px;
+}
+
+.codigo-lab .navbar i{
+	color:white;
+}
+
+.codigo-lab .navbar i:hover{
+	color:#3F1F62;
+}
+.serial{
+	padding-top: 30px;
+}
+
+.enviado-num{
+	padding-top: 30px;
+	font-size: 24px;
+}
+
+.lab {
+    font-size: 33px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #3F1F62;
+}
+
+.num-codigo {
+    width: 10%;
+    margin-right: 5px;
+    border-bottom: 2px #F1F1F1 solid;
+    font-size: 18px;
+    padding: 10px;
+    color:#FC1DBD;
+    text-align: center;
+}
+
+.codigo-lab{
+	background-image: url(../img/fondo-codigo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 730px;
+    padding-top: 20px;
+    position: fixed;
+    background-position-y: bottom;
+    color:#FC1DBD ;
+}
+
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+}
