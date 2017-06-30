@@ -8,12 +8,15 @@ h5{
 	font-weight: 800;
     font-size: 23px;
 }
+.linea{
+	margin-top: 12px;
+}
 #input_container {
   width: 100%;
 }
 #input-name {
 	height: 35px;
-	margin: 0px;
+	margin: 24px;
 	padding-right: 30px;
 	width: 80%;
 	box-shadow: none;
@@ -22,7 +25,7 @@ h5{
 }
 #input_container .user {
 	position: absolute;
-	top: 6px;
+	top: 30px;
 	left: 14%;
 	height: 24px;
 }
@@ -38,7 +41,7 @@ h5{
 }
 #input_container .envelope {
   position: absolute;
-  top: 52px;
+  top: 100px;
  	left: 14%;
 	height: 26px;
 }
@@ -47,14 +50,36 @@ h5{
 	position: absolute;
 	pointer-events: none;
 	left: 21%;
-	top: 11px;
+	top: 33px;
   transition: 0.2s ease all;
+	color: rgba(128, 128, 128, 0.28);
 }
 
 .floating-label-2 {
 	position: absolute;
 	pointer-events: none;
 	left: 21%;
-	top: 57px;
+	top:104px;
   transition: 0.2s ease all;
+	color: rgba(128, 128, 128, 0.28);
+}
+
+.checkbox, .radio {
+	position: relative;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+.boton-next{
+	margin-top:50px;
+}
+.next{
+	margin-left: -30px;
+	background-color: #f13fc1;
+	border: none;
+	width: 112%;
+	font-size: 20px;
+	height: 62px;
+	color: white;
+	font-weight: 100;
 }
