@@ -1,0 +1,60 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h5{
+	font-weight: 800;
+    font-size: 23px;
+}
+#input_container {
+  width: 100%;
+}
+#input-name {
+	height: 35px;
+	margin: 0px;
+	padding-right: 30px;
+	width: 80%;
+	box-shadow: none;
+	text-shadow: none;
+	border: 1px solid;
+}
+#input_container .user {
+	position: absolute;
+	top: 6px;
+	left: 14%;
+	height: 24px;
+}
+
+#input-email {
+	height: 35px;
+	margin: 13px;
+	padding-right: 30px;
+	width: 80%;
+	box-shadow: none;
+	text-shadow: none;
+	border: 1px solid;
+}
+#input_container .envelope {
+  position: absolute;
+  top: 52px;
+ 	left: 14%;
+	height: 26px;
+}
+
+.floating-label {
+	position: absolute;
+	pointer-events: none;
+	left: 21%;
+	top: 11px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-2 {
+	position: absolute;
+	pointer-events: none;
+	left: 21%;
+	top: 57px;
+  transition: 0.2s ease all;
+}
