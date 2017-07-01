@@ -17,18 +17,36 @@
       <header class="container-full">
         <div class="row">
           <div class="col-xs-12 hr">
-            <a><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <h1 class="text-center">Sign up</h1>
-            <h6 class="text-center">Join now for free ride credit</h6>
-          </div>
-          <div class="col-xs-12 text-center">
-            <input type="number" name="phone" class="required">
-            <button type="button" class="btn-block" id="next_button">NEXT</button>
+            <h5 class="text-center">Join now for free ride credit</h5>
           </div>
         </div>
       </header>
+      <section id="submit-phone">
+        <div class="container-full">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <select>
+                <option class="clp" value="chile">Chile</option>
+                <option value="mexico">Mexico</option>
+                <option value="peru">Perú</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Brasil">Brasil</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <input type="number" name="phone" class="required">
 
-
+              <h5>We'll send a text to verify your phone</h5>
+              <button type="button" class="btn-block" id="next-button">NEXT</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
      <!--Enlazar jQuery siempre antes todos los scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

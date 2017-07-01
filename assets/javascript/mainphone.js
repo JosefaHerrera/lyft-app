@@ -1,21 +1,20 @@
 $(document).ready(function() {
-    $("#next_button").hide();
+    $("#next-button").hide();
 
-    $('.required').on('keyup', function () {                    
+    $('.required').on('keyup', function (){                    
            ToggleSubmitButton();
     }); 
 });
 
-function ToggleSubmitButton()
-{
-    $("#next_button").hide();
+function ToggleSubmitButton(){
+    $("#next-button").hide();
     var getRequiredLength = $('.required').length;
-    var nonempty = $('.required').filter(function() {
+    var nonempty = $('.required').filter(function(){
         return this.value != ''
     }).length;
 
-    if(getRequiredLength ==  nonempty){
-        $("#next_button").show();
+    if(getRequiredLength == nonempty){
+        $("#next-button").show();
     }
-
 }
+
