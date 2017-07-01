@@ -29,4 +29,33 @@ document.getElementById("next").addEventListener("click",function(){
 		}
 	}
 	checkbox();
-})
+});
+
+function saveData(){
+	var lname = document.getElementsByClassName("name").value;
+	var lemail = document.getElementsByClassName("email").value
+
+	localStorage.lData = lname;
+	localStorage.lData = lemail;
+}
+
+function loadData() {
+
+    var localDataname = localStorage.lname;
+
+    var localDataemail = localStorage.lemail;
+
+    if (lname) {
+
+    document.getElementsByClassName("name").value = localDataname;
+
+    }
+
+    if (lemail) {
+
+    document.getElementsByClassName("email").value = localDataemail;
+
+    }
+
+    }
+
