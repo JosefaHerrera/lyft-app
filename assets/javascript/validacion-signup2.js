@@ -1,21 +1,21 @@
 document.getElementById("next").addEventListener("click",function(){
 	
 	function name(){
-		var name = document.getElementsByClassName("name").value;
+		var name = $("#input-name").val();
 		if(!(/^[a-z][a-z]*/.test(name)) || (name == "")){
   		alert("Please enter a valid Name");
 		}
 	}
 	name();
 	function email(){
-		var email = document.getElementsByClassName("email").value;
+		var email = $("#input-email").val();
 		if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email)) ) {
   		alert("Please enter a valid Email");
 		}
 	}
 	email();
 	function checkbox(){
-		var checkbox = document.getElementById("checkbox");
+		var checkbox = $("#checkbox").val();
 		var seleccionado = false;
 		for(var i=0; i<checkbox.length; i++) {    
 		  if(checkbox[i].checked) {
