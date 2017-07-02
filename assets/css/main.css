@@ -16,19 +16,20 @@
 
 .info-perfil{ /*alto de caja con info*/
 	padding: 5px 30px;
-	height: 40vh;
 }
 
 .imagen-perfil{ /* para que la imagen se pege a los bordes*/
 	padding: 0;
 }
 
-#profile > img{ /*para que la imagen se ajuste al ancho de la caja que lo contiene*/
-	width: 90%;
+.imagen-perfil > img{ /*para que la imagen se ajuste al ancho de la caja que lo contiene*/
+	width: 100%;
 }
 	
-.glyphicon{ /*espacio de separacion de cada icono*/
+.glyphicon-home, .glyphicon-user, .glyphicon-music{ /*espacio de separacion de cada icono*/
 	padding: 11px;
+	margin-left: 20px;
+	display: block;
 }
 
 .info{ /*separa los iconos del nombre y fecha*/
@@ -40,12 +41,25 @@
 	display: inline;
 }
 
-.puntos{
+.fecha{ /*estilos para fecha de ingreso usuario*/
+	background-color: #EAEAEA;
+	color: grey;
+	margin:3px;
+	padding: 7px;
+	margin-bottom: 20px;
+	width: 100%;
+	border:solid thin white;
+	border-radius: 5px;
+}
+
+.glyphicon-option-vertical{ /* alinear icono menu*/
+	padding-left: 12px;
 	color: white;
 	font-size: 20px;
 }
 
-h3{ /*nombre del usuario*/
+h2{ /*nombre del usuario*/
 	margin-top: 0;
-	padding-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
