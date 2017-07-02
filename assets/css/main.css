@@ -2,45 +2,50 @@
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-
-.menu{
+.menu{ /*para que el menu quede sobre la imagen de perfil*/
 	position: absolute;
+	top: 22px;
+	left:18px;
 	width: 92%;
 	z-index: 10;
 }
 
-.menu button{
+.menu button{ /*alinea el boton a la derecha*/
 	margin-left: 60%;
 }
 
-.info-perfil{
-	background-color: silver;
-	height: 300px;
+.info-perfil{ /*alto de caja con info*/
+	padding: 5px 30px;
+	height: 40vh;
 }
 
-.imagen-perfil{
-	background-color: grey;
+.imagen-perfil{ /* para que la imagen se pege a los bordes*/
+	padding: 0;
+}
+
+#profile > img{ /*para que la imagen se ajuste al ancho de la caja que lo contiene*/
+	width: 90%;
 }
 	
-.glyphicon{
+.glyphicon{ /*espacio de separacion de cada icono*/
 	padding: 11px;
 }
 
-.info{
+.info{ /*separa los iconos del nombre y fecha*/
 	padding-top: 11px;
 	padding-left: 0;
 }
 
-.info p{
+.info p{ /*coloca p a la derecha de cada icono*/
 	display: inline;
 }
 
-h3{
-	margin-top: 0;
-	padding-top: 10px;
+.puntos{
+	color: white;
+	font-size: 20px;
 }
 
-.img-user img{
-	width: 100%;
-	padding: 0;
+h3{ /*nombre del usuario*/
+	margin-top: 0;
+	padding-top: 10px;
 }
