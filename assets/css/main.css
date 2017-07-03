@@ -10,8 +10,8 @@
 	z-index: 10;
 }
 
-.menu button{ /*alinea el boton a la derecha*/
-	margin-left: 60%;
+#edit-profile{
+	float: right;
 }
 
 .info-perfil{ /*alto de caja con info*/
@@ -63,3 +63,29 @@ h2{ /*nombre del usuario*/
 	padding-top: 20px;
 	padding-bottom: 5px;
 }
+
+.hide{
+	display:none;
+}
+
+#modal-info{
+	background-color: whitesmoke;
+	padding: 20px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: 200;
+}
+
+.guardar{
+	margin: 150px 20px;
+}
+
+.guardar button{
+	width: 150px;
+}
+
+.datos input{
+	margin:25px auto;
+}
+
