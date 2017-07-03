@@ -38,7 +38,7 @@ $(document).ready(function() {
 		localStorage.setItem("Nombre", nom);
 		var nombre = localStorage.getItem("Nombre");
 
-		$(".datos h2").appen(nombre);
+		$(".datos h2").append(nombre);
 	}
 	guardar();
 	localStorage.nombre = $(".name").val();

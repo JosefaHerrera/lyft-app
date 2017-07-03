@@ -51,15 +51,13 @@ function initMap() {
   		//busca el dato de mi ubicación y destino
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         directionsService.route({
-          origin: miPosicion,
-          destination: document.getElementById('destino').value,
+          origin: "Puma 1180, Recoleta, Chile",
+          destination: document.getElementById('trazar').value,
           travelMode: 'DRIVING'
         }, function(response, status) {
           if (status === 'OK') {
             directionsDisplay.setDirections(response);
-          } else {
-            window.alert('Tu búsqueda ha generado un error: ' + status);
-          }  
+          } 
         });
       }
 
