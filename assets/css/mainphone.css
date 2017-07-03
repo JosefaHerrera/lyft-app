@@ -60,5 +60,15 @@ ul li{
 	color: black;
 }
 .miniflag{
-	width: 5%;
+	width: 60%;
+}
+
+.btn-primary, .showflag{
+	background-color: transparent;
+	border: 0;
+	width: 70px;
+}
+.btn-primary:focus{
+	background-color: transparent;
+	border: 0;
 }
