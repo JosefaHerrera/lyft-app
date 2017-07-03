@@ -13,11 +13,12 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" type="text/css" href="assets/css/stylemenu.css">
+  <link rel="stylesheet" href="assets/css/geolocation.css">
 </head>
 
 <body>
   <section>
-    <a href="#" onclick="openNav()" class="bars"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <a href="#" onclick="openNav()" class="bars"><span class="glyphicon glyphicon-user user mapElement"></span></a>
     <div id="myMenu" class="menu">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
       <div class="container-foto">
@@ -31,7 +32,7 @@
         <div class="row">
           <div class="col-xs-12 text-center">
             <div class="datos">
-              <h2 class="nombrePersona" >Mercedes</h2>
+              <h2></h2>
               <a href="#"  id="view"><h4>View profile</h4></a>
             </div>
           </div>
@@ -90,7 +91,31 @@
   </section>
 
   <div id="main">
-
+    <section id="geolocation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              
+                <div id="map-header"> 
+                  
+                  
+                  <img class="mapElement" id="logo" src="assets/img/logo-white.png" alt="logoApp">
+                  <span class="glyphicon glyphicon-gift regalo mapElement"></span>
+                </div> 
+            </div> 
+                <div class="row">
+                 <div class="col-xs-12 caja-mapa">
+                  <div id="mapa">
+                    <!-- soy un mapa -->                
+                  </div> <!-- mapa -->
+                  <input id="destino" type="text" placeholder="Set your destination">
+                  <button id="trazar" type="submit" class="text-uppercase">Set pickup</button>
+                  </div><!-- row map header -->
+                  </div>
+                </div> <!-- col xs 12 -->
+          </div><!--/.row todo mapa-->
+        </div><!-- /.container-fluid -->
+      </section>
   </div>
 
 
@@ -102,10 +127,15 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <!-- FONT AWESOME -->
   <script src="https://use.fontawesome.com/be0dd1e218.js"></script>
+   <!-- API Geolocation-->    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvjouL2qpwU2ageGuKHXn4Fnyh5vpNWWw&libraries=places&callback=initMap"
+    type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- BOOTSTRAP --> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- mi archivo de js -->
   <script type="text/javascript" src="assets/javascript/menu.js"></script>
   <script type="text-javascript" src="assets/javascript/validacion-signup2"></script>
+  <script type="text/javascript" src="assets/javascript/geolocation.js"></script>
 </body>
 </html>

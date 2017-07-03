@@ -39,7 +39,7 @@ $(document).ready(function() {
 	
 		
 	$(".botonMenu").click(function(event) {
-		$(".nombrePersona").append(localStorage.nombre);
+		$(".datos h2").replaceWith("<h2>" + localStorage.nombre + "</h2>");
 	});
 	
 
