@@ -1,0 +1,78 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+.flechita{
+	float: left;
+    font-size: 24px;
+    margin-top: 27px;
+    color: grey;
+}
+h5{
+	font-weight: 800;
+    font-size: 23px;
+}
+.linea{
+	margin-top: 12px;
+}
+#input_container {
+  width: 100%;
+}
+
+input
+{
+    background: no-repeat scroll 0 0 transparent;
+    border: 1px solid #BFBFBF;
+    color: #BFBFBF;
+    padding: 5px 5px 5px 25px;
+}
+
+#input-name {
+	height: 35px;
+	margin: 24px;
+	padding-right: 30px;
+	width: 80%;
+	box-shadow: none;
+	text-shadow: none;
+	border: 1px solid;
+}
+
+input.username{ 
+	background-position: 0;
+    background-image: url(../img/user-01.png);
+    background-size: 22px;
+}
+input.useremail{
+	background-position: 0;
+    background-image: url(../img/envelope-01.png);
+    background-size: 22px;
+}
+#input-email {
+	height: 35px;
+	margin: 13px;
+	padding-right: 30px;
+	width: 80%;
+	box-shadow: none;
+	text-shadow: none;
+	border: 1px solid;
+}
+
+.checkbox, .radio {
+	position: relative;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.boton-next{
+	margin-top:50px;
+}
+.boton-next .next{
+    padding: 19px 51%;
+    margin-left: -30px;
+    background-color: #f13fc1;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+}
