@@ -8,84 +8,94 @@
   <!--BOOTSTRAP-->
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- FONTAWESOME -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- LINK FONT GOOGLE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- LINK FONT GOOGLE -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
 <body>
-  <section class="menu">
-    <div class="container-foto">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="foto">
-            <img src="assets/img/profile.jpg" alt="profile" width="200" height="200">
+  <section>
+    <a href="#" onclick="openNav()" class="bars"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <div id="myMenu" class="menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+      <div class="container-foto">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="foto">
+              <img src="assets/img/profile.jpg" alt="profile" width="200" height="200">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="datos">
+              <h2>Mercedes</h2>
+              <a href="#" id="view"><h4>View profile</h4></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="home opciones">
+              <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Home</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="free opciones">
+              <a href="#"><i class="fa fa-gift" aria-hidden="true"></i>Free Rides</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="ride opciones">
+              <a href="#"><i class="fa fa-history" aria-hidden="true"></i>Ride history</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="pay opciones">
+              <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>Payment</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="help opciones">
+              <a href="#"><i class="fa fa-question" aria-hidden="true"></i>Help</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="settings opciones">
+              <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="sign opciones">
+              <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Sign up to drive</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="datos">
-            <h2>Mercedes</h2>
-            <h4>View profile</h4>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="home">
-            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Home</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="free">
-            <a href="#"><i class="fa fa-gift" aria-hidden="true"></i>Free Rides</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="ride">
-            <a href="#"><i class="fa fa-history" aria-hidden="true"></i>Ride history</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="pay">
-            <a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>Payment</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="help">
-            <a href="#"><i class="fa fa-question" aria-hidden="true"></i>Help</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="settings">
-            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="sign">
-            <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>sing up to drive</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-
   </section>
+
+  <div id="main">
+
+  </div>
+
+
+
+  
 
 
   <!--Enlazar jQuery siempre antes todos los scripts-->
