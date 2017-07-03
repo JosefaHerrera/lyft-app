@@ -45,3 +45,20 @@ select{
 	height: 26px;
 	background-color: transparent;
 }
+
+.imgflag{
+	width: 20%;
+	height: 20%;
+}
+
+ul li{
+	list-style: none;
+}
+
+.modal{
+	background-color: white;
+	color: black;
+}
+.miniflag{
+	width: 5%;
+}
