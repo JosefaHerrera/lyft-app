@@ -1,0 +1,92 @@
+*{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* #876AAB lila claro botón
+#470086 morado oscuro punto y mensaje */
+
+
+#mapa {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: -10; 
+}
+
+#map-header{
+	position: absolute;
+	top: 30px;
+	left: 280px;
+}
+
+
+.user {
+	background-color: #FFF;
+  color: #56546C;
+  font-size: 25px;
+  padding: 11px;
+  margin-left: -250px;
+  border-radius: 50px;
+  border: thin solid #a5a5a5;
+  z-index: 10;
+  position: absolute;
+	}
+
+
+.regalo {
+	background-color: #FFF;
+  color: #56546C;
+  font-size: 25px;
+  padding: 11px;
+  margin-left: 279px;
+  border-radius: 50px;
+  border: thin solid #a5a5a5;
+  z-index: 10;
+  position: absolute;
+	}
+
+#logo {
+	width: 60px;
+	z-index: 1000;
+	position: absolute;
+	
+	}
+
+#destino {
+	margin-top: 500px;
+  margin-left: 110px;
+  border-radius: 9px;
+  border: 1px solid #a5a5a5;
+  color: #BFBFBF;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 108px;
+  background-color: #FFF;
+  background-image: url(../img/circulo-2.png);
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+ }
+
+#trazar {
+  color: #FFF;
+  background-color: #876AAB;
+  margin-top: 30px;
+  margin-left: 110px;
+  border-radius: 9px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s ease all;
+  font-size: 16px;
+  padding: 12px 150px;
+}
+
+#trazar:hover {
+	background-color: #470086;
+	transition: .5s ease all;
+
+}
+
+
+

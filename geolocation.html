@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Lyft app</title>
+     <!-- LINK FONT GOOGLE -->
+     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
+     <!--BOOTSTRAP-->
+     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Hoja de estilos -->
+        <link rel="stylesheet" type="text/css" href="assets/css/geolocation.css">
+   </head>
+
+   <body>
+      <section id="geolocation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row">
+                <div id="map-header"> 
+                  <!-- contenedor perfil circulo -->
+                  <span class="glyphicon glyphicon-user user mapElement"></span>
+                  <img class="mapElement" id="logo" src="assets/img/logo-white.png" alt="logoApp">
+                  <span class="glyphicon glyphicon-gift regalo mapElement"></span>
+                </div> <!-- map header -->
+              </div> <!-- row map header -->
+                <div id="mapa">
+                    <!-- soy un mapa -->                
+                </div> <!-- mapa -->
+                <input id="destino" type="text" placeholder="Set your destination">
+                <button id="trazar" type="submit" class="text-uppercase">Set pickup</button>
+            </div> <!-- col xs 12 -->
+          </div><!--/.row todo mapa-->
+        </div><!-- /.container-fluid -->
+      </section>
+
+
+     <!--Enlazar jQuery siempre antes todos los scripts-->
+   
+     <!-- API Geolocation-->    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvjouL2qpwU2ageGuKHXn4Fnyh5vpNWWw&libraries=places&callback=initMap"
+    type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  jquery -->
+     <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <!-- mi archivo de js -->
+     <script type="text/javascript" src="assets/javascript/geolocation.js"></script>
+   </body>
+ </html>
+
+ 

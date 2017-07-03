@@ -41,6 +41,7 @@ function initMap() {
           error(false, map.getCenter());
       }
 
+      
 
       //para que funcione con el boton
   		document.getElementById("trazar").addEventListener("click", function(){
@@ -66,5 +67,5 @@ function initMap() {
 
 //funcion para mensaje de error
 function error() {
-	alert("No es posible encontrar tu ubicacion");
+	alert("No es posible encontrar tu ubicación");
 }
