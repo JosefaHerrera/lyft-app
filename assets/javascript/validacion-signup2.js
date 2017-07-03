@@ -33,7 +33,14 @@ $(document).ready(function() {
 	}
 	checkbox();
 	});
+	function guardar(){
+		var nom = $("#input-name").val();
+		localStorage.setItem("Nombre", nom);
+		var nombre = localStorage.getItem("Nombre");
 
+		$(".datos h2").appen(nombre);
+	}
+	guardar();
 	localStorage.nombre = $(".name").val();
 	localStorage.email = $(".email").val();
 	
