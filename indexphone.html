@@ -14,7 +14,7 @@
       <script src="https://use.fontawesome.com/046c2163eb.js"></script>
    </head>
    <body>
-      <header class="container-full">
+      <header class="container">
         <div class="row">
           <div class="col-xs-12 hr">
             <a href="index.html"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -24,22 +24,29 @@
         </div>
       </header>
       <section id="submit-phone">
-        <div class="container-full">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
-              <select>
-                <option value="chile">Chile</option>
-                <option value="mexico">Mexico</option>
-                <option value="peru">Perú</option>
-                <option value="argentina">Argentina</option>
-                <option value="colombia">Colombia</option>
-                <option value="ecuador">Ecuador</option>
-                <option value="brasil">Brasil</option>
-                <option value="bolivia">Bolivia</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="venezuela">Venezuela</option>
-              </select>
-              <input type="number" name="phone" class="required">
+              
+              <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/flags/chile.png" class="miniflag" id="showflag" ></a>
+
+              <div id="myModal" class="modal" role="dialog">
+               <ul id="c-flag">
+                <li><a href="#" id="chile">Chile <img class="imgflag chi" src="assets/img/flags/chile.png"></a></li>
+                <li><a href="#" id="mex">Mexico <img class="imgflag me" src="assets/img/flags/mexico.png"></a></li>
+                <li><a href="#" id="peru">Perú <img class="imgflag pe" src="assets/img/flags/peru.png"></a></li>
+                <li><a href="#" id="arg">Argentina <img class="imgflag ar" src="assets/img/flags/argentina.png"></a></li>
+                <li><a href="#" id="col">Colombia <img class="imgflag co" src="assets/img/flags/colombia.png"></a></li>
+                <li><a href="#" id="ecu">Ecuador <img class="imgflag ec" src="assets/img/flags/ecuador.png"></a></li>
+                <li><a href="#" id="bra">Brasil <img class="imgflag br" src="assets/img/flags/brasil.png"></a></li>
+                <li><a href="#" id="bol">Bolivia <img class="imgflag bo" src="assets/img/flags/bolivia.png"></a></li>
+                <li><a href="#" id="uru">Uruguay <img class="imgflag ur" src="assets/img/flags/uruguay.png"></a></li>
+                <li><a href="#" id="vene">Venezuela <img class="imgflag ve" src="assets/img/flags/venezuela.png"></a></li>
+               </ul> 
+               <button type="button" data-dismiss="modal" class="text-right">close</button>
+              </div>
+              <a id="code">+56</a>
+              <input type="number" name="phone" class="required" id="inputt">
 
               <h5>We'll send a text to verify your phone</h5>
               <a href="index3.html" type="button" class="btn-block" id="next-button">NEXT</a>
