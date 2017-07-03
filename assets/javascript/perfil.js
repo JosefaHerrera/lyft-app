@@ -14,6 +14,11 @@ $(document).ready(function(){
 
 	$("#guardar").click(function(){ // guardar los datos
 
+		
+		localStorage.ciudad=document.getElementById("ciudad").value;
+		localStorage.musica=document.getElementById("musica").value;
+		localStorage.bio=document.getElementById("bio").value;
+
 
 		if((localStorage.ciudad != undefined) && (localStorage.musica != undefined)){
 
@@ -21,7 +26,7 @@ $(document).ready(function(){
 			$(".music").replaceWith("<p>" + localStorage.musica + "</p>");
 			$(".about").replaceWith("<p>" + localStorage.bio + "</p>");
 
-		$("#modal-info").toggleClass("hide"); // mostrar modal al hacer click en edit
+		$("#modal-info").toggleClass("hide"); // cerrar modal
 		}else { 
 			alert("Debes ingresar tu nombre y tu password")
 			}
