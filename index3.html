@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Lyft app</title>
+     <link rel="shortcut icon" href="assets/img/logo.png">
+     <!-- LINK FONT GOOGLE -->
+     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
+     <!--BOOTSTRAP-->
+     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Hoja de estilos -->
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/codigo-lab.css">
+   </head>
+   <body>
+   		<section class="codigo-lab">
+		   <nav class="navbar navbar-default">
+				  <div class="container">
+						<a class="navbar-brand icono-back" href="">
+							<i class="glyphicon glyphicon-menu-left"></i>
+						</a>
+						<h2 class="text-center"><strong>Ingresa tu Codígo</strong></h2>
+				  </div>
+		  </nav>
+
+			<div class="container serial">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h2 class="lab">LAB -</h2>
+					</div>
+				</div>
+					<div class="row casillas">
+						<div class="col-xs-12 text-center">
+							<input type="tel" maxlength="1" class="num-codigo">
+							<input type="tel" maxlength="1" class="num-codigo">
+							<input type="tel" maxlength="1" class="num-codigo">
+						</div>
+					</div>
+					<div class="row enviado-num">
+						<div class="col-xs-12 text-center">
+							<strong><p>código enviado al número +56 <span id="celular"></span></p></strong>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center btn-enviar">
+							<button type="button" id="enviar-code" class="btn btn-default enviar-code">Enviar</button>
+						</div>
+					</div>
+			</div>
+		</section>
+
+
+     <!--Enlazar jQuery siempre antes todos los scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/be0dd1e218.js"></script>
+    <!-- BOOTSTRAP --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <!-- mi archivo de js -->
+     <script type="text/javascript" src="assets/javascript/main.js"></script>
+     <script type="text/javascript" src="assets/javascript/codigo.js"></script>
+   </body>
+ </html>
