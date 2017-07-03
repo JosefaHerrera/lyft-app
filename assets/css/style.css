@@ -3,7 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+.flechita{
+	float: left;
+    font-size: 24px;
+    margin-top: 27px;
+    color: grey;
+}
 h5{
 	font-weight: 800;
     font-size: 23px;
