@@ -98,6 +98,10 @@ ul li a img.ve{
 .miniflag{
 	width: 60%;
 }
+
+.btnmodal{
+	margin-left: 25px;
+}
 .btn{
 	padding: 0;
 }
@@ -110,4 +114,9 @@ ul li a img.ve{
 .btn-primary:focus{
 	background-color: transparent;
 	border: 0;
+}
+
+.alert-warning{
+	background-color: transparent;
+	border-color: transparent;
 }
