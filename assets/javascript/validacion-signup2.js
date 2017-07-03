@@ -2,7 +2,7 @@ document.getElementById("next").addEventListener("click",function(){
 	
 	function name(){
 		var name = $("#input-name").val();
-		
+
 		if(!(/^[a-z][a-z]*/.test(name)) || (name == "")){
   		alert("Please enter a valid Name");
 		}
@@ -10,7 +10,7 @@ document.getElementById("next").addEventListener("click",function(){
 	name();
 	function email(){
 		var email = $("#input-email").val();
-		if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email)) ) {
+		if(!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){
   		alert("Please enter a valid Email");
 		}
 	}
