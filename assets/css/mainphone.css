@@ -109,3 +109,8 @@ ul li a img.ve{
 	background-color: transparent;
 	border: 0;
 }
+
+.alert-warning{
+	background-color: transparent;
+	border-color: transparent;
+}
