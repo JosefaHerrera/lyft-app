@@ -1,6 +1,10 @@
 /**/
 $(document).ready(function(){
 
+		localStorage.ciudad=document.getElementById("ciudad").value;
+		localStorage.musica=document.getElementById("musica").value;
+		localStorage.bio=document.getElementById("bio").value;
+
 	$( "#modal-info" ).toggleClass( "hide" ); //ocultar modal
 
 	$("#edit-profile").click(function(){
@@ -9,9 +13,7 @@ $(document).ready(function(){
 	})
 
 	$("#guardar").click(function(){ // guardar los datos
-		localStorage.ciudad=document.getElementById("ciudad").value;
-		localStorage.musica=document.getElementById("musica").value;
-		localStorage.bio=document.getElementById("bio").value;
+
 
 		if((localStorage.ciudad != undefined) && (localStorage.musica != undefined)){
 

@@ -5,7 +5,8 @@
 .menu{ /*para que el menu quede sobre la imagen de perfil*/
 	position: absolute;
 	top: 22px;
-	width: 100%;
+	left: 10px;
+	width: 90%;
 	z-index: 10;
 }
 
@@ -13,11 +14,13 @@
 	float: right;
 }
 
-#foto{
+.foto{
+	width: 100%;
 }
 
-#foto img{
+.foto img{
 	width: 100%;
+	padding:0 6px;
 }
 
 .info-perfil{ /*alto de caja con info*/
