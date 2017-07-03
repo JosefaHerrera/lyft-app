@@ -1,33 +1,38 @@
 /**/
+$(document).ready(function(){
 
-$("#edit").click( function(){
+	$( "#modal-info" ).toggleClass( "hide" ); //ocultar modal
+
+	$("#edit-profile").click(function(){
+		$("#modal-info").toggleClass("hide"); // mostrar modal al hacer click en edit
+
+	})
+
+	$("#guardar").click(function(){ // guardar los datos
+		localStorage.ciudad=document.getElementById("ciudad").value;
+		localStorage.musica=document.getElementById("musica").value;
+		localStorage.bio=document.getElementById("bio").value;
+
+		if((localStorage.ciudad != undefined) && (localStorage.musica != undefined)){
+
+			$(".city").replaceWith("<p>" + localStorage.ciudad + "</p>");
+			$(".music").replaceWith("<p>" + localStorage.musica + "</p>");
+			$(".about").replaceWith("<p>" + localStorage.bio + "</p>");
+
+		$("#modal-info").toggleClass("hide"); // mostrar modal al hacer click en edit
+		}else { 
+			alert("Debes ingresar tu nombre y tu password")
+			}
+
+	})
+
+	$("#cancelar").click(function(){ // cerrar modal sin cambios
+		$("#modal-info").toggleClass("hide");
+	})
+
+}); // ./ready
 
 	
 
-});
 
-
-
-function guardarDatos(){
-	localStorage.nombre=document.getElementById("nombre").value;
-	localStorage.password=document.getElementById("password").value;
-
-	if((localStorage.nombre.length == 0) && (localStorage.password.length == 0)){
-
-	alert("Debes ingresar tu nombre y tu password")
-	}
-
-}
-
-function recuperarDatos(){
-	if((localStorage.nombre != undefined) && (localStorage.password != undefined)){
-		document.getElementById("datos").innerHTML = 
-		"Nombre: " + localStorage.nombre + "<br/> Password: " + localStorage.password;
-	}else if((localStorage.nombre.length == 0) && (localStorage.password.length == 0)){
-
-	alert("Debes ingresar tu nombre y tu password")
-	}else{
-
-		document.getElementById("datos").innerHTML = "No has introducido tu nombre y tu password";
-	}
-}
+//--------------------------------------------

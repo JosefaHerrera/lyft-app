@@ -5,13 +5,19 @@
 .menu{ /*para que el menu quede sobre la imagen de perfil*/
 	position: absolute;
 	top: 22px;
-	left:18px;
-	width: 92%;
+	width: 100%;
 	z-index: 10;
 }
 
 #edit-profile{
 	float: right;
+}
+
+#foto{
+}
+
+#foto img{
+	width: 100%;
 }
 
 .info-perfil{ /*alto de caja con info*/
@@ -47,7 +53,6 @@
 	margin:3px;
 	padding: 7px;
 	margin-bottom: 20px;
-	width: 100%;
 	border:solid thin white;
 	border-radius: 5px;
 }
@@ -68,13 +73,19 @@ h2{ /*nombre del usuario*/
 	display:none;
 }
 
+.mostrar{
+	display: block;
+}
+
 #modal-info{
 	background-color: whitesmoke;
+	width: 100%;
 	padding: 20px;
 	height: 100vh;
 	position: absolute;
 	top: 0;
 	z-index: 200;
+	margin: 0;
 }
 
 .guardar{
