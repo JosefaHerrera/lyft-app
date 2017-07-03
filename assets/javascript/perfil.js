@@ -32,6 +32,8 @@ $(document).ready(function(){
 		$("#modal-info").toggleClass("hide");
 	})
 
+	
+
 }); // ./ready
 
 	

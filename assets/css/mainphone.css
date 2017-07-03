@@ -22,6 +22,8 @@ h1{
 	font-size: 2em;
 	font-weight: 600;
 	border: 0;
+	margin-left: -15px;
+    width: 108%;
 }
 .btn-block:hover{
 	background-color: pink;
