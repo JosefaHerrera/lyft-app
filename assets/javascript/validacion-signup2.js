@@ -1,4 +1,6 @@
-document.getElementById("next").addEventListener("click",function(){
+$(document).ready(function() {
+	
+	document.getElementById("next").addEventListener("click",function(){
 	
 	function name(){
 		var name = $("#input-name").val();
@@ -30,33 +32,17 @@ document.getElementById("next").addEventListener("click",function(){
 		}
 	}
 	checkbox();
+	});
+
+	localStorage.nombre = $(".name").val();
+	localStorage.email = $(".email").val();
+	
+		
+	$(".botonMenu").click(function(event) {
+		$(".nombrePersona").append(localStorage.nombre);
+	});
+	
+
+
+
 });
-
-function saveData(){
-	var lname = document.getElementsByClassName("name").value;
-	var lemail = document.getElementsByClassName("email").value
-
-	localStorage.lData = lname;
-	localStorage.lData = lemail;
-}
-
-function loadData() {
-
-    var localDataname = localStorage.lname;
-
-    var localDataemail = localStorage.lemail;
-
-    if (lname) {
-
-    document.getElementsByClassName("name").value = localDataname;
-
-    }
-
-    if (lemail) {
-
-    document.getElementsByClassName("email").value = localDataemail;
-
-    }
-
-    }
-
