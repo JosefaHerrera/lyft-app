@@ -30,21 +30,23 @@
 						<h2 class="lab">LAB -</h2>
 					</div>
 				</div>
-					<div class="row casillas">
+					<div class="row casillas text-center">
 						<div class="col-xs-12 text-center">
-							<input type="tel" maxlength="1" class="num-codigo">
-							<input type="tel" maxlength="1" class="num-codigo">
-							<input type="tel" maxlength="1" class="num-codigo">
+							<input class="text-center input-code" type="tel" maxlength="3" id="num-codigo">
+							
 						</div>
 					</div>
 					<div class="row enviado-num">
 						<div class="col-xs-12 text-center">
-							<strong><p>código enviado al número +56 <span id="celular"></span></p></strong>
+							<strong><p>código recibido<span id="celular"></span></p></strong>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12 text-center btn-enviar">
-							<a href="signup2.html" type="button" id="enviar-code" class="btn btn-default enviar-code">Enviar</a>
+
+							<a><button id="enviar-code" href="" type="button" class="btn btn-default btn-code">Enviar</button></a>
+
+							
 						</div>
 					</div>
 			</div>
@@ -58,7 +60,6 @@
     <!-- BOOTSTRAP --> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
      <!-- mi archivo de js -->
-     <script type="text/javascript" src="assets/javascript/main.js"></script>
      <script type="text/javascript" src="assets/javascript/codigo.js"></script>
    </body>
  </html>
