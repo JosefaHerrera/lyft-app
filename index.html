@@ -13,9 +13,27 @@
    </head>
 
    <body>
+      <section id="geolocation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 mapa hidden-sm hidden-md hidden-lg">
+              <div id="mapa">
+                  <!-- soy un mapa -->
+                <input id="destino" type="text" placeholder="Set your destination">
+                <button id="trazar" type="submit" class="text-uppercase">Set pickup</button>
+                <span class="km" id="resultado"></span>
+              </div> <!-- mapa -->
+            </div> <!-- col xs 12 -->
+          </div><!--/.row -->
+        </div><!-- /.container-fluid -->
+      </section>
 
 
      <!--Enlazar jQuery siempre antes todos los scripts-->
+     <!-- API Geolocation-->
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2pri9spnXiCjZfdicYTySc4-nt9TU-N0&callback=initMap"
+    type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/be0dd1e218.js"></script>
@@ -25,3 +43,5 @@
      <script type="text/javascript" src="assets/javascript/main.js"></script>
    </body>
  </html>
+
+ 
