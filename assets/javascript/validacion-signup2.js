@@ -2,6 +2,7 @@ document.getElementById("next").addEventListener("click",function(){
 	
 	function name(){
 		var name = $("#input-name").val();
+		
 		if(!(/^[a-z][a-z]*/.test(name)) || (name == "")){
   		alert("Please enter a valid Name");
 		}
@@ -24,7 +25,7 @@ document.getElementById("next").addEventListener("click",function(){
 		  }
 		}
 		 
-		if(!seleccionado) {
+		if(seleccionado) {
 		  alert("Please accept our Terms and Conditions");
 		}
 	}
