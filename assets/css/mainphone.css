@@ -51,16 +51,53 @@ select{
 	height: 20%;
 }
 
+ul{
+	margin-top: 20px;
+}
+
 ul li{
 	list-style: none;
 }
-
+ul li a img.chi{
+	margin-left: 100px;
+}
+ul li a img.me{
+	margin-left: 88px;
+}
+ul li a img.pe{
+	margin-left: 104px;
+}
+ul li a img.ar{
+	margin-left: 73px;
+}
+ul li a img.co{
+	margin-left: 74px;
+}
+ul li a img.ec{
+	margin-left: 81px;
+}
+ul li a img.br{
+	margin-left: 98px;
+}
+ul li a img.bo{
+	margin-left: 91px;
+}
+ul li a img.ur{
+	margin-left: 79px;
+}
+ul li a img.ve{
+	margin-left: 71px;
+}
 .modal{
 	background-color: white;
 	color: black;
+	text-align: left;
 }
 .miniflag{
 	width: 60%;
+}
+.btn{
+	padding: 0;
 }
 
 .btn-primary, .showflag{
