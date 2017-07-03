@@ -63,6 +63,16 @@ function initMap() {
         });
       }
 
+
+      var destinoAutoComp = (document.getElementById('destino')); //toma punto de destino
+         var autocompletar = new google.maps.places.Autocomplete(destinoAutoComp);
+         autocompletar.bindTo('bounds', map);
+
+     //para que funcione con el boton
+         document.getElementById("trazar").addEventListener("click", function(){
+         calculateAndDisplayRoute(directionsService, directionsDisplay);
+       });
+
 } // fin de funcion initMap
 
 //funcion para mensaje de error
